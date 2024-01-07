@@ -10,14 +10,15 @@ const time = document.getElementById("time");
 const number = document.getElementById("number");
 
 function sendEmail(){
-            const bodyMessage = `<table class="ecxinnermain" style="table-layout: fixed; background-color: white; width: 440px; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+            const bodyMessage = `<table class="ecxinnermain" style="table-layout: fixed; background-color: rgb(240, 223, 223); width: 440px; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
             <tbody>
             
               <tr>
                 <td colspan="4">
 
                 
-                  <table style="background-color: white; width: 100%;" class="ecxlogo" border="0" cellpadding="0" cellspacing="0">
+                  <table style="background-color: rgb(209, 145, 115); width: 100%;" class="ecxlogo" border="0" cellpadding="0" cellspacing="0">
                     <tbody>
                       <tr>
                         <td colspan="2" height="20"><br></td>
@@ -25,7 +26,7 @@ function sendEmail(){
                       
                       <tr>
                         <tr>
-                          <td align="center" style="padding-top: 0rem;"><img src="http://global-maze.whf.bz/cb.png" width="83%">
+                          <td align="center" style="padding-top: 0rem;"><img src="https://overdoze.co/img/logo.png" width="83%">
                         </td></tr>
                         <td colspan="2" style="height: 20px;"><br></td>
                       </tr>
@@ -35,16 +36,16 @@ function sendEmail(){
                   
 
                 
-                  <table style="border: 1px solid rgb(239, 239, 239);" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <table style="border: 1px solid rgb(209, 0, 0);" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tbody>
                       <tr>
                           
                       </tr>
                       
-                      <tr style="color: rgb(102, 102, 102); line-height: 20px; font-family: Arial,Helvetica,sans-serif; font-size: 14px;">
+                      <tr style="color: rgb(185, 16, 16); line-height: 20px; font-family: Arial,Helvetica,sans-serif; font-size: 14px;">
                         <td class="ecxcontent" style="padding-right: 40px; padding-left: 40px;" colspan="2" align="center" valign="top">
 
-                          <table style="background-color: rgb(255, 255, 255); width: 100%;" border="0" cellpadding="0" cellspacing="0">
+                          <table style="background-color: rgb(240, 223, 223); width: 100%;" border="0" cellpadding="0" cellspacing="0">
                             
   <tbody>
     <tr>
@@ -57,7 +58,7 @@ function sendEmail(){
     
 
 <tr>
-  <td style="height: 2px; background-color: white;"><br></td>
+  <td style="height: 1px; background-color: rgb(214, 133, 133);"><br></td>
 </tr>
 
 
@@ -65,9 +66,11 @@ function sendEmail(){
     <tr>
       <td align="left">
         <div class="flex flex-col items-center space-y-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="text-green-600 w-28 h-28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
+          <div style="text-align: center;">
+            <img src="https://overdoze.co/img/check.gif" width="100px" style="text-align: center;"fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+         </div>
+          
+            
         
       </td>
     </tr>
@@ -79,39 +82,32 @@ function sendEmail(){
 
     <tr>
       <td align="left">
-        <p style="color: rgb(72, 84, 93); line-height: 14px; font-size: 14px;">
-          Hello ${fullName.value} , 
-
-        </p>
+        <p style="color: rgb(190, 70, 0); line-height: 4px; font-size: 18px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+          Hello ${fullName.value} ,</p>
       </td>
     </tr>
     <tr>
       <td align="left">
-        <p style="color: rgb(72, 84, 93); line-height: 24px; font-size: 14px;">
-          <br>Thank you for your reservation at Overdoze.
-
-        </p>
+        <p style="color: rgb(190, 70, 0); line-height: 24px; font-size: 18px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+          <br>Thank you for your reservation at Overdoze.</p>
       </td>
     </tr>
     <tr>
       <td align="left">
-        <p style="color: rgb(72, 84, 93); line-height: 24px; font-size: 14px ;padding-top: 1.5rem">
-          We are expecting you on ${date.value} at ${time.value}.
-
-        </p>
+        <p style="color: rgb(190, 70, 0); line-height: 24px; font-size: 18px ;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;padding-top: 1.5rem">
+          Your Reservation has been Confirmed. <br>
+          We are expecting you on ${date.value} at ${time.value}.</p>
       </td>
     </tr>
     <tr>
       <td align="left">
-        <p style="color: rgb(72, 84, 93); line-height: 24px; font-size: 14px ;padding-top: 1.5rem">
-        We are looking forward to your visit and hope you will have the best dining expe with us.
-
-        </p>
+        <p style="color: rgb(190, 70, 0); line-height: 24px; font-size: 18px ;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;padding-top: 1.5rem">
+          We are looking forward to your visit and hope you will have the best dining expe with us.</p>
       </td>
     </tr>
     <tr><td height="12"><br></td></tr>
       <tr><td align="center">
-          <a style="padding: 15px 25px; color: rgb(255, 255, 255); text-decoration: none; display: block; background-color: rgb(74, 144, 226);" href="https://maps.app.goo.gl/ZYDoDZ1ymEkLMsecA?g_st=ic" target="_blank">Address</a>
+          <a style="padding: 15px 25px; color: rgb(0, 0, 0); text-decoration: none; display: block; background-color: rgb(130, 169, 212);" href="https://maps.app.goo.gl/ZYDoDZ1ymEkLMsecA?g_st=ic" target="_blank">Address</a>
       </td>
     </tr>
 
@@ -119,12 +115,12 @@ function sendEmail(){
       
     </tr>
 
-    <tr><td height="20"><br></td></tr>
+
 
     <tr>
       <td align="left">
-        <span style="color: rgb(162, 162, 162); line-height: 19px; font-size: 12px; font-weight: bold;"><hr>
-          &copy;2021 Coinbase<br>www.coinbase.com | Help Center | User Agreement and Privay Policy:</span><span style="color: rgb(162, 162, 162); line-height: 19px; font-size: 12px; font-style: italic;">
+        <span style="color: rgb(0, 0, 0); line-height: 15px; font-size: 12px; font-weight: bold;"><hr>
+          &copy;2023 Overdoze<br>www.overdoze.co | Help Center | User Agreement and Privay Policy:</span><span style="color: rgb(162, 162, 162); line-height: 19px; font-size: 12px; font-style: italic;">
         </span>
       </td>
     </tr>
