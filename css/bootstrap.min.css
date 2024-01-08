@@ -6,7 +6,6 @@
  */
 :root {
     --bs-blue: #0d6efd;
-    background-image: url(.././img/bg-hero.jpg);
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
     --bs-pink: #d63384;
@@ -571,6 +570,7 @@ progress {
     width: 100%;
     padding-right: var(--bs-gutter-x, .75rem);
     padding-left: var(--bs-gutter-x, .75rem);
+    background-color: #ebe7bbad;
     margin-right: auto;
     margin-left: auto
 }
